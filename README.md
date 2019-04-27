@@ -1,4 +1,5 @@
-# Apartment Community Chat - Chat de Comunidade de Apartamento
+# Apartment Community Chat
+# Chat de Comunidade de Apartamento
 
 Projeto do 5º Semestre (APS) - Curso: Ciência da Computação
 
