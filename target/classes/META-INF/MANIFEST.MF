@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: apart-community-chat-backend
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: LFO
+Implementation-Vendor-Id: br.com.easyflowweb
+Build-Jdk: 1.8.0_161
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/apart-community-chat-backend
+Created-By: Maven Integration for Eclipse
+
