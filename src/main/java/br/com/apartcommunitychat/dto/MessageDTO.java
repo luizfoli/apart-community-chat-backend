@@ -2,6 +2,8 @@ package br.com.apartcommunitychat.dto;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 /**
  * Classe DTO responsável por representar um objeto 'Mensagem'.
  * 
@@ -14,17 +16,23 @@ public class MessageDTO {
 
 	private String message;
 	private String author;
+
+	@JsonFormat(pattern = "dd/MM/yyyy", shape = JsonFormat.Shape.STRING)
 	private Date dtSend;
+
+	@JsonFormat(pattern = "HH:mm:ss", shape = JsonFormat.Shape.STRING)
+	private String timeDtSend;
 
 	public MessageDTO() {
 
 	}
 
-	public MessageDTO(String message, String author, Date dtSend) {
+	public MessageDTO(String message, String author, Date dtSend, String timeDtSend) {
 		super();
 		this.message = message;
 		this.author = author;
 		this.dtSend = dtSend;
+		this.timeDtSend = timeDtSend;
 	}
 
 	public String getMessage() {
@@ -49,6 +57,21 @@ public class MessageDTO {
 
 	public void setDtSend(Date dtSend) {
 		this.dtSend = dtSend;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("MessageDTO [message=");
+		builder.append(message);
+		builder.append(", author=");
+		builder.append(author);
+		builder.append(", dtSend=");
+		builder.append(dtSend);
+		builder.append(", timeDtSend=");
+		builder.append(timeDtSend);
+		builder.append("]");
+		return builder.toString();
 	}
 
 }
